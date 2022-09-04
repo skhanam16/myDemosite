@@ -124,6 +124,7 @@ ul{
 
 .flex{
     display: flex;
+    justify-content: space-between;
 }
 
 .flex-row{
@@ -279,7 +280,7 @@ font-weight: bold;
 }
 
 .container{
-    background-color: rgb(190, 229, 150);
+    background-color: rgb(249, 251, 248);
    
 }
 
@@ -503,21 +504,21 @@ margin-bottom: 5%;
 /*--------Campus style------*/
 
 
-.campus{
-    margin-top: 5%;
+#site-main .campus .grid{
+    column-gap: 4em;
+    text-align: center;
 }
 
 .field .field--name-field-heading{
     font-size: 36px;
     font-weight: 600;
-}
-
-.row{
+    text-align: center;
 
 }
+
 
 .campus-col{
-    flex-basis: 32%;
+   
     border-radius: 10px;
     margin-bottom: 5%;
     position: relative;
@@ -543,7 +544,7 @@ margin-bottom: 5%;
     background: rgba(226,6,6,0.7);
 }
 
-.campus h3{
+.field--name-field-heading-three{ /*  ---------campus h3------ */
     width: 100%;
     font-size: 26px;
     font-weight: 500;
@@ -556,7 +557,7 @@ margin-bottom: 5%;
     transition: 0.5s;
 }
 
-.layer:hover h3{
+.layer:hover .field--name-field-heading-three{
     bottom: 49%;
     opacity: 1;
 }
@@ -570,13 +571,32 @@ margin-bottom: 5%;
 }
 
 @media (max-width: 700){
-    .row{
-        flex-direction: column;
+    .cols-1{
+        grid-template-columns: repeat(1 ,minmax(0,1fr));
     }
+    
    
 }
 
 /*--------Campus style------*/
+
+/*--------Course style------*/
+
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.couse-col:hover{
+    box-shadow:0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+/*--------/Course style------*/
 
 /*  ------------Footer classes ------------- */
 #footer{

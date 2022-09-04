@@ -94,7 +94,8 @@ ul {
   font-weight: bold; }
 
 .flex {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
 
 .flex-row {
   flex-direction: row; }
@@ -214,7 +215,7 @@ ul {
   width: 100%; }
 
 .container {
-  background-color: #bee596; }
+  background-color: #f9fbf8; }
 
 /*  ------------Site branding style ------------- */
 .site-branding {
@@ -378,15 +379,16 @@ p {
 
 /*  ---------/Article area----- */
 /*--------Campus style------*/
-.campus {
-  margin-top: 5%; }
+#site-main .campus .grid {
+  column-gap: 4em;
+  text-align: center; }
 
 .field .field--name-field-heading {
   font-size: 36px;
-  font-weight: 600; }
+  font-weight: 600;
+  text-align: center; }
 
 .campus-col {
-  flex-basis: 32%;
   border-radius: 10px;
   margin-bottom: 5%;
   position: relative;
@@ -409,7 +411,8 @@ p {
 .layer:hover {
   background: rgba(226, 6, 6, 0.7); }
 
-.campus h3 {
+.field--name-field-heading-three {
+  /*  ---------campus h3------ */
   width: 100%;
   font-size: 26px;
   font-weight: 500;
@@ -421,7 +424,7 @@ p {
   opacity: 0;
   transition: 0.5s; }
 
-.layer:hover h3 {
+.layer:hover .field--name-field-heading-three {
   bottom: 49%;
   opacity: 1; }
 
@@ -433,9 +436,23 @@ p {
   padding: 10px; }
 
 @media (max-width: 700) {
-  .row {
-    flex-direction: column; } }
+  .cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)); } }
 /*--------Campus style------*/
+/*--------Course style------*/
+.course-col {
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s; }
+
+.couse-col:hover {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2); }
+
+/*--------/Course style------*/
 /*  ------------Footer classes ------------- */
 #footer {
   background-color: black;
