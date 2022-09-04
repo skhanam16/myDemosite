@@ -124,6 +124,7 @@ ul{
 
 .flex{
     display: flex;
+    justify-content: space-between;
 }
 
 .flex-row{
@@ -543,7 +544,7 @@ margin-bottom: 5%;
     background: rgba(226,6,6,0.7);
 }
 
-.field--name-field-heading-three { /*  ---------campus h3------ */
+.field--name-field-heading-three{ /*  ---------campus h3------ */
     width: 100%;
     font-size: 26px;
     font-weight: 500;
@@ -578,6 +579,24 @@ margin-bottom: 5%;
 }
 
 /*--------Campus style------*/
+
+/*--------Course style------*/
+
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.couse-col:hover{
+    box-shadow:0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+/*--------/Course style------*/
 
 /*  ------------Footer classes ------------- */
 #footer{

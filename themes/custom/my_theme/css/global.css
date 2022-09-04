@@ -94,7 +94,8 @@ ul {
   font-weight: bold; }
 
 .flex {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
 
 .flex-row {
   flex-direction: row; }
@@ -438,6 +439,20 @@ p {
   .cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr)); } }
 /*--------Campus style------*/
+/*--------Course style------*/
+.course-col {
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s; }
+
+.couse-col:hover {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2); }
+
+/*--------/Course style------*/
 /*  ------------Footer classes ------------- */
 #footer {
   background-color: black;

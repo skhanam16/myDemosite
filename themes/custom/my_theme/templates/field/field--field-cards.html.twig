@@ -40,6 +40,10 @@
 {%
   set classes = [
     'field',
+    'grid',
+     'cols-1',
+    'lg-cols-3',
+    'lg-cols-4',
     'field--name-' ~ field_name|clean_class,
     'field--type-' ~ field_type|clean_class,
     'field--label-' ~ label_display,
@@ -69,7 +73,7 @@
   <div{{ attributes.addClass(classes) }}>
     <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
     {% if multiple %}
-      <div class="field__items grid cols-1 lg-cols-3 lg-cols-4 lg-cols-5">
+      <div class="field__items ">
     {% endif %}
     {% for item in items %}
       <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
