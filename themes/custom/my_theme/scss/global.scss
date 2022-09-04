@@ -541,14 +541,15 @@ margin-bottom: 5%;
 }
 
 .layer:hover{
-    background: rgba(226,6,6,0.7);
+    background: #cd6666;
+    opacity: .5;
 }
 
 .field--name-field-heading-three{ /*  ---------campus h3------ */
     width: 100%;
     font-size: 26px;
-    font-weight: 500;
-    color: #fff;
+    font-weight: 600;
+    color: #000;
     bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
@@ -559,6 +560,7 @@ margin-bottom: 5%;
 
 .layer:hover .field--name-field-heading-three{
     bottom: 49%;
+    // opacity: .5;
     opacity: 1;
 }
 
@@ -584,9 +586,11 @@ margin-bottom: 5%;
 
 .course-col{
     flex-basis: 31%;
-    background: #fff3f3;
+    justify-content: space-between;
+    background: #e6e6e6;
     border-radius: 10px;
-    margin-bottom: 5%;
+    margin: 5%;
+    // margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
@@ -594,6 +598,12 @@ margin-bottom: 5%;
 
 .couse-col:hover{
     box-shadow:0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 700px){
+    .course-col{
+        flex-direction: column;
+    }
 }
 
 /*--------/Course style------*/
@@ -645,13 +655,28 @@ margin-bottom: 5%;
 
 
 /* Responsive columns */
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
+// @media screen and (min-width: 600px) {
+//     .column {
+//       width: 100%;
+//       display: block;
+//       margin-bottom: 20px;
+//     }
+//   }
+
+@media (max-width: 700px) {
+   
+    // .container{
+    //     min-width: 700px;
+        
+    // }
+    .flex{
+        flex-direction: column;
+        background: #000;
     }
-  }
+   
+}
+
+
 
 /*  for large screen md(768px) */
 @media (min-width:768px) {
