@@ -221,9 +221,12 @@ ul {
 .site-branding {
   color: red; }
 
+/*  ------------Header style ------------- */
+/*  ------------Header style ------------- */
 /*  ------------Nav style ------------- */
 nav {
   display: flex;
+  margin: auto;
   justify-content: space-around;
   align-items: center; }
 
@@ -233,18 +236,19 @@ nav img {
 nav .nav-menu {
   flex: 1;
   text-align: right;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 200; }
+
+nav .nav-menu a, .link {
+  color: #e1e5e8;
+  border: none; }
 
 nav .nav-menu li {
   list-style: none;
   display: inline-block;
   padding: 8px 12px;
   position: relative; }
-
-nav .nav-menu #nav-menu-items li a .link {
-  text-decoration: none;
-  color: #fff !important;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
 nav .nav-menu li::after {
   content: '';
@@ -261,8 +265,7 @@ nav .nav-menu li:hover::after {
 /*  ------------/Nav style ------------- */
 /*  ------------nav close icons style ------------- */
 nav .fa {
-  color: red;
-  font-size: 30px; }
+  display: none; }
 
 /*  ------------nav close icons style ------------- */
 /*  ------------Feature image style ------------- */
@@ -274,27 +277,27 @@ nav .fa {
   position: relative; }
 
 .hero-text {
-  text-align: center;
+  width: 50%;
+  color: #ffffff;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  text-align: center;
   background-color: var(--bg-black);
   opacity: .5; }
 
 .hero-text h1 {
-  font-size: 2em;
-  font-weight: bold;
-  color: white; }
+  font-size: 2rem;
+  color: #ffffff; }
 
 .hero-text p {
-  margin: 10px 0 40px;
-  font-size: 1em; }
+  margin: 0 40px;
+  font-size: 1rem;
+  padding: 0 2%; }
 
 .feature-btn {
   display: inline-block;
-  padding: 1em;
   text-decoration: none;
   color: var(--text-dark2);
   border: 1px solid var(--text-dark2);
@@ -308,6 +311,16 @@ nav .fa {
   background: #f44336;
   transition: 1s; }
 
+@media (max-width: 700px) {
+  .hero-text {
+    width: 90%; }
+
+  .hero-text h1 {
+    font-size: 12px;
+    color: #ffffff; }
+
+  .hero-text p {
+    font-size: 10px; } }
 /*  ------------/Feature image style ------------- */
 /*  ------------Float four columns side by side------ */
 .action_wrapper {
@@ -472,10 +485,13 @@ p {
 /*  ------------/Footer classes ------------- */
 /*  ------------ @media query ------------- */
 /*  for large screen sm(640px) greater than or equal 640px---*/
-@media (min-width: 640px) {
+@media (max-width: 640px) {
   .container {
     max-width: 640px;
     /* background-color: #3eb7c7; */ }
+
+  .search-form .form-search {
+    display: none; }
 
   .sm-text-xl {
     font-size: 3em; }
@@ -488,18 +504,38 @@ p {
     grid-template-columns: repeat(1, minmax(0, 1fr)); }
 
   .text-box h1 {
-    font-size: 1em;
-    font-weight: bold;
-    background-color: #da2ca3; } }
-/* Responsive columns */
-@media (max-width: 700px) {
+    font-size: 1rem; }
+
+  nav .nav-menu ul li {
+    display: inline-block;
+    color: black; }
+
+  .nav-menu {
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2; }
+
   .flex {
-    flex-direction: column;
-    background: #000; } }
+    flex-direction: column; }
+
+  nav .fa {
+    display: block;
+    color: #b11f1f;
+    font-size: 3rem;
+    margin: 10px;
+    cursor: pointer; }
+
+  .nav-menu ul {
+    padding: 30px; } }
 /*  for large screen md(768px) */
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .container {
-    max-width: 786px; }
+    min-width: 786px; }
 
   .md-text-left {
     text-align: left; }
@@ -508,11 +544,14 @@ p {
     margin: initial; }
 
   .md-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+  .text-box h1 {
+    font-size: 2rem; } }
 /*  for large screen lg(1024px) */
 @media (min-width: 1024px) {
   .container {
-    max-width: 1024px; }
+    min-width: 1024px; }
 
   #nav .toggle-btn > button {
     display: none; }
@@ -528,9 +567,6 @@ p {
 
   .active {
     max-height: 100% !important; }
-
-  .lg-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
   .lg-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr)); } }
