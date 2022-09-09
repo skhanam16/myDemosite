@@ -18,7 +18,9 @@
  *   - in_active_trail: TRUE if the link is in the active trail.
  */
 #}
- {# <i class="fa fa-times"></i> #}
+
+
+
 
 {% import _self as menus %}
 
@@ -29,7 +31,7 @@
 {{ menus.menu_links(items, attributes, 0, menu_name) }}
 {% macro menu_links(items, attributes, menu_level, menu_name) %}
   {% import _self as menus %}
-   <i class="fa fa-times" ></i>
+  {# <i class="fa fa-times"></i> #}
   {% if items %}
     {% if menu_level == 0 %}
       <ul{{ attributes.addClass('nav-menu').setAttribute('id','nav-menu-items') }}>
@@ -45,7 +47,7 @@
       </li>
     {% endfor %}
     </ul>
-     <i class="fa fa-bars" ></i>
+   {# <i class="fa fa-bars"></i> #}
   {% endif %}
 {% endmacro %}
-  {# <i class="fa fa-bars"></i> #}
+ 
