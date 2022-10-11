@@ -1,0 +1,64 @@
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
+
+/*  ------------Site branding style ------------- */
+
+.site-branding{
+    color:red;
+}
+
+/*  ------------Header style ------------- */
+
+
+/*  ------------Header style ------------- */
+
+
+
+/*  ------------Float four columns side by side------ */
+
+.action_wrapper{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-color: #3d2cda;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+
+
+.action-col{
+flex-basis: 31%;
+background: #fff3f3;
+border-radius: 10px;
+margin-bottom: 5%;
+}
+
+
+.flex{
+    flex-direction: column;
+    }
+    .responsive-menus.responsified span.toggler{
+        width: 639px;
+    }

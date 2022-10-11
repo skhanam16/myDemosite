@@ -1,0 +1,44 @@
+/*  ---------Cards------ */
+.card-container{
+    box-sizing: border-box;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    width: 300px;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 3px 2px 5px rgb(75, 74, 74);
+
+}
+
+.card .card-body{
+    margin-top: -5px;
+    padding: 10px;
+    background-color: rgb(206, 206, 206);
+
+}
+
+.card .card-body .card-title{
+
+    font-size: 2rem;
+}
+
+.card .card-body .card-description{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 12px rgb(161, 160, 160);
+}
+
+
+
+/*  ---------/Cards------ */

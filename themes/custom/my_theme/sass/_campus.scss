@@ -1,0 +1,80 @@
+
+    /*--------Campus style------*/
+
+
+    #site-main .campus .grid{
+        column-gap: 4em;
+        text-align: center;
+        }
+    
+        .field .field--name-field-heading{
+        font-size: 36px;
+        font-weight: 600;
+        text-align: center;
+    
+        }
+    
+        .campus-col{
+    
+        border-radius: 10px;
+        margin-bottom: 5%;
+        position: relative;
+        overflow: hidden;
+        }
+    
+        .campus-col>img{
+        width: 100%;
+        display: block;
+        }
+        .layer{
+        background: transparent;
+        opacity: 1.5;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+        transition: 0.5s;
+        }
+    
+        .layer:hover{
+        background: #cd6666;
+        opacity: .5;
+        }
+    
+        .field--name-field-heading-three{ /*  ---------campus h3------ */
+        width: 100%;
+        font-size: 26px;
+        font-weight: 600;
+        color: #000;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s;
+        }
+    
+        .layer:hover .field--name-field-heading-three{
+        bottom: 49%;
+        // opacity: .5;
+        opacity: 1;
+        }
+    
+        .field .field--name-field-body{
+        color: #000;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+        }
+    
+        @media (max-width: 700){
+        .cols-1{
+        grid-template-columns: repeat(1 ,minmax(0,1fr));
+        }
+    
+    
+        }
+    
+        /*--------Campus style------*/

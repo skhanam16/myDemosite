@@ -1,0 +1,25 @@
+ /*--------Course style------*/
+
+ .course-col{
+    flex-basis: 31%;
+    justify-content: space-between;
+    background: #e6e6e6;
+    border-radius: 10px;
+    margin: 5%;
+    // margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    }
+
+    .couse-col:hover{
+    box-shadow:0 0 50px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 700px){
+    .course-col{
+    flex-direction: column;
+    }
+    }
+
+    /*--------/Course style------*/
