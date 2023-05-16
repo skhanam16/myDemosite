@@ -16,6 +16,7 @@ https://www.drupal.org/project/project_theme.
 
 MULTISITE CONFIGURATION
 -----------------------
+PS C:\xampp\htdocs\gitClone\myDemosite\themes\custom\my_theme> sass --watch scss/global.scss:css/global.css
 
 In multisite configurations, themes found in this directory are available to
 all sites. You may also put themes in the sites/all/themes directory, and the
